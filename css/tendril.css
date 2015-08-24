@@ -125,3 +125,31 @@ footer {
 [data-magellan-expedition-clone] .sub-nav dd {
     margin-bottom: 0.2rem;
 }
+
+
+.header.panel {
+    margin: 2rem;
+  }
+
+  .header.panel p {
+    }
+
+  .header.panel .sign {
+    background: #BBB;
+    position: relative;
+    top: -2.5rem;
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 3px;
+    }
+
+    .header.panel .sign h1 {
+      text-transform: uppercase;
+      color: #FFF;
+      font-weight: bold;
+      font-size: 110%;
+      text-align: center;
+      }
