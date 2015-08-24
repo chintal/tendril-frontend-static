@@ -1,3 +1,16 @@
+
+a{
+    color: #739C36;
+}
+
+a:hover, a:focus{
+    color: #84B33F;
+}
+
+.breadcrumbs > * a {
+    color: #739C36;
+}
+
 .valign-middle {
     display: table;
 }
