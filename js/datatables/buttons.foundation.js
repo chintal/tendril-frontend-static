@@ -5,7 +5,7 @@ $.extend( true, DataTables.Buttons.defaults, {
 	dom: {
 		container: {
 			tag: 'ul',
-			className: 'dt-buttons button-group stack-for-small'
+			className: 'dt-buttons button-group'
 		},
 		buttonContainer: {
 			tag: 'li',
@@ -13,7 +13,7 @@ $.extend( true, DataTables.Buttons.defaults, {
 		},
 		button: {
 			tag: 'a',
-			className: 'button tiny radius'
+			className: 'button radius'
 		},
 		buttonLiner: {
 			tag: null
@@ -23,7 +23,7 @@ $.extend( true, DataTables.Buttons.defaults, {
 			className: 'dt-button-collection f-dropdown open',
 			button: {
 				tag: 'a',
-				className: 'tiny radius'
+				className: 'radius'
 			}
 		}
 	}
