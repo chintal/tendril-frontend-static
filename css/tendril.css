@@ -145,12 +145,14 @@ footer {
     padding-right: 1rem;
     border-radius: 3px;
     }
-
-    .header.panel .sign h1 {
+    .header.panel .sign h1, 
+    .header.panel .sign h2, 
+    .header.panel .sign h3, 
+    .header.panel .sign h4, 
+    .header.panel .sign h5, 
+    .header.panel .sign h6{
       text-transform: uppercase;
-      color: #FFF;
-      font-weight: bold;
-      font-size: 110%;
+      color: #FFF !important;
       text-align: center;
       }
 
