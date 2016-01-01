@@ -145,11 +145,11 @@ footer {
     padding-right: 1rem;
     border-radius: 3px;
     }
-    .header.panel .sign h1, 
-    .header.panel .sign h2, 
-    .header.panel .sign h3, 
-    .header.panel .sign h4, 
-    .header.panel .sign h5, 
+    .header.panel .sign h1,
+    .header.panel .sign h2,
+    .header.panel .sign h3,
+    .header.panel .sign h4,
+    .header.panel .sign h5,
     .header.panel .sign h6{
       text-transform: uppercase;
       color: #FFF !important;
@@ -165,7 +165,7 @@ footer {
     padding-right: 0rem;
 }
 
-.icon-button{ 
+.icon-button{
     font-size: 1.5rem;
     padding: 0.1rem 0.625rem 0.1rem 0.625rem;
     margin-bottom: 0rem;
@@ -179,4 +179,64 @@ footer {
 ul.doclinklist{
     margin-left: 0rem;
     list-style-type: none;
+}
+
+table.embedtable{
+    margin-bottom: 0.2em;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table.cleantable{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table.cleantable tr{
+    border-bottom: 0.2px solid grey !important;
+}
+
+table.cleantable tbody td{
+    vertical-align: top;
+}
+
+table.cleantable tbody tr.even,
+ table.cleantable tbody tr.alt,
+ table.cleantable tbody tr:nth-child(even),
+ table.cleantable tbody tr:nth-of-type(2n)
+{
+    background: #FFF;
+}
+
+td.resultcell-pass
+{
+    background: #66CC66;
+    color: #FFFFFF;
+}
+
+th.resulthead-pass
+{
+    background: #006600;
+    color: #FFFFFF;
+}
+
+td.resultcell-fail
+{
+    background: #CC6666;
+    color: #FFFFFF;
+}
+
+th.resulthead-fail
+{
+    background: #990000;
+    color: #FFFFFF;
+}
+
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
 }
