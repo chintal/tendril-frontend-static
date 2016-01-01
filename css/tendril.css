@@ -193,7 +193,7 @@ table.cleantable{
 }
 
 table.cleantable tr{
-    border-bottom: 0.2px solid grey !important;
+    border-bottom: 1px solid #D8D8D8 !important;
 }
 
 table.cleantable tbody td{
