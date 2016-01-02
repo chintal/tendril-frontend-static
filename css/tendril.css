@@ -212,24 +212,42 @@ td.resultcell-pass
 {
     background: #66CC66;
     color: #FFFFFF;
+    text-align: center;
 }
 
 th.resulthead-pass
 {
     background: #006600;
     color: #FFFFFF;
+    text-align: center;
 }
 
 td.resultcell-fail
 {
     background: #CC6666;
     color: #FFFFFF;
+    text-align: center;
 }
 
 th.resulthead-fail
 {
     background: #990000;
     color: #FFFFFF;
+    text-align: center;
+}
+
+th.resulthead-yellow
+{
+    background: #FF9900;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+td.resultcell-yellow
+{
+    background: #FFCC00;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 td.details-control {
