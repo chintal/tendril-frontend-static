@@ -262,3 +262,7 @@ tr.shown td.details-control {
 .clear-bottom {
     margin-bottom: 0;
 }
+
+.clear-left {
+    margin-left: 0 !important;
+}
