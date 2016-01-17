@@ -128,7 +128,7 @@ footer {
 
 
 .header.panel {
-    margin: 2rem;
+    margin-top: 2rem;
   }
 
   .header.panel p {
@@ -274,4 +274,13 @@ tr.shown td.details-control {
 
 .error small.error{
     background-color: rgba(240, 65, 36, 0.8);
+}
+
+.ptembedlink{
+    padding: 0em !important;
+    display: block;
+}
+
+.ptembedlink > div{
+    padding: 0.9375em;
 }
