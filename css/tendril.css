@@ -284,3 +284,19 @@ tr.shown td.details-control {
 .ptembedlink > div{
     padding: 0.9375em;
 }
+
+.filter.button {
+    background-color: #a0d3e8;
+    border-color: #61b6d9;
+    color: #333333;
+}
+
+.filter.button.active {
+    background-color: #008CBA;
+    border-color: #007095;
+    color: #FFFFFF;
+}
+
+#card-container .card-instance{
+    display: none;
+}
