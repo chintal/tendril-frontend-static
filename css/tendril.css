@@ -310,7 +310,7 @@ tr.shown td.details-control {
 .accordion-navigation.active > a:after {
   content: "↟"; }
 
-.accordion ul, .changelog ul{
+.accordion ul, .changelog ul, .validation ul{
     margin-left: 0px;
 }
 
@@ -394,4 +394,97 @@ tr.shown td.details-control {
 
 .entry-desc li:last-child{
     border-bottom: none;
+}
+
+.validation{
+    padding: 0 0 0 0;
+    display: table;
+}
+
+.validation * {
+    list-style: none;
+    line-height: 1;
+}
+
+.validation h5{
+    background-color: #333333;
+    color: #EEEEEE;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding: 0.9375rem 1.25rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.validation .sectiontitle{
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal ;
+    padding: 0.9375rem 1.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+li.accordion-navigation > a.validation.sectiontitle.warning{
+    background-color: #f08a24;
+    border-color: #cf6e0e;
+    color: #FFFFFF;
+}
+
+li.accordion-navigation > a.validation.sectiontitle.warning:hover,
+li.accordion-navigation > a.validation.sectiontitle.warning:focus{
+    background-color: #cf6e0e;
+}
+
+li.accordion-navigation > a.validation.sectiontitle.alert{
+    background-color: #f04124;
+    border-color: #cf2a0e;
+    color: #FFFFFF;
+}
+
+li.accordion-navigation > a.validation.sectiontitle.alert:hover,
+li.accordion-navigation > a.validation.sectiontitle.alert:focus{
+    background-color: #cf2a0e;
+}
+
+.validation-alert{
+    background: #f7f7f7;
+    color: #333;
+    border: none;
+    border-left: 6px solid #f04124;
+    box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.2);
+    padding: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.validation-warning{
+    background: #f7f7f7;
+    color: #333;
+    border: none;
+    border-left: 6px solid #f08a24;
+    box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.2);
+    padding: 0.25rem;
+    margin-top: 0.4rem;
+}
+
+.error-head {
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    overflow: hidden;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+.error-detail {
+    width: 100%;
+    text-align: left;
+    display: table-cell;
+    overflow: hidden;
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1.2;
 }
