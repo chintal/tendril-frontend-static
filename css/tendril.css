@@ -414,6 +414,7 @@ tr.shown td.details-control {
     font-weight: lighter;
     padding: 0.9375rem 1.25rem;
     margin-top: 1rem;
+    margin-bottom: 0.25rem;
     text-align: center;
 }
 
