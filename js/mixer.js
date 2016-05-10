@@ -37,6 +37,8 @@ var multiFilter = {
     self.$filterUi = $('#filters');
     self.$filterGroups = $('.filter-group');
     self.$filterButtons = $('.filter');
+    self.$sortGroups = $('.sort-group');
+    self.$sortButtons = $('.sort');
     self.$reset = $('#reset');
     self.$container = $('#card-container');
 
@@ -82,9 +84,18 @@ var multiFilter = {
                     $(this).parent().parent()
                         .find('a[data-filter="all"]')
                         .removeClass('active');
+                    $(this).addClass('active');
+                }
+                else{
+                    $(this).removeClass('active');
+                    if (!$(this).parent().parent().find('a.active').length){
+                        $(this).parent().parent()
+                            .find('a[data-filter="all"]')
+                            .addClass('active');
+                    }
                 }
             }
-            $(this).toggleClass('active');
+
             self.parseFilters();
     	});
 
@@ -210,7 +221,7 @@ var multiFilter = {
 
     !self.outputString.length && (self.outputString = 'all');
 
-    console.log(self.outputString);
+    // console.log(self.outputString);
 
     // ^ we can check the console here to take a look at the filter string that is produced
 
