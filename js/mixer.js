@@ -21,6 +21,7 @@ var multiFilter = {
   $filterUi: null,
   $reset: null,
   groups: [],
+  sorts: [],
   outputArray: [],
   outputString: '',
 
@@ -51,6 +52,13 @@ var multiFilter = {
       });
     });
 
+    self.$sortGroups.each(function(){
+        self.sorts.push({
+            $buttons: $(this).find('.sort'),
+            active: []
+        });
+    });
+
     self.bindHandlers();
   },
 
@@ -77,6 +85,7 @@ var multiFilter = {
                         $(this).children()
                         .removeClass('active');
                     });
+                    $(this).addClass('active');
                 }
             }
             else{
@@ -99,6 +108,24 @@ var multiFilter = {
             self.parseFilters();
     	});
 
+    self.$sortButtons
+        .filter('a')
+        .on('click', function(){
+            if(!$(this).hasClass('active')){
+//                $(this).parent().siblings().each( function(){
+//                    $(this).children()
+//                    .removeClass('active');
+//                });
+                self.$sortButtons.filter('a')
+                    .removeClass('active');
+                $(this).addClass('active');
+            }
+            else{
+                $(this).removeClass('active');
+            }
+            self.parseSorts();
+        });
+
     self.$filterGroups
       .filter('.search')
       .on('keyup change', resetTimer);
@@ -109,16 +136,38 @@ var multiFilter = {
       self.$filterButtons
         .filter('a')
         .removeClass('active');
+      self.$sortButtons
+        .filter('a')
+        .removeClass('active');
       self.$filterButtons
         .filter('a[data-filter="all"]')
         .addClass('active');
       self.$filterUi.find('input[type="text"]').val('');
       self.parseFilters();
+      self.parseSorts();
     });
   },
 
-  // The parseFilters method checks which filters are active in each group:
+  parseSorts: function(){
+    var self = this,
+        sortstring = '';
 
+    if (self.$sortButtons.filter('a.active').length){
+        self.$sortButtons
+            .filter('a.active').each(function(){
+                sortstring = this.getAttribute('data-sort');
+            });
+    }
+    else{
+        sortstring = 'default';
+    }
+
+    if(self.$container.mixItUp('isLoaded')){
+    	self.$container.mixItUp('sort', sortstring);
+    }
+  },
+
+  // The parseFilters method checks which filters are active in each group:
   parseFilters: function(){
     var self = this;
     // loop through each filter group and add active filters to arrays
