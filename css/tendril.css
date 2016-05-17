@@ -293,6 +293,10 @@ tr.shown td.details-control {
     font-weight: lighter;
 }
 
+.filter.button{
+    padding: .625rem 1rem .6875rem 1rem;
+}
+
 .sort.button, .filter.button {
     background-color: #a0d3e8;
     border-color: #61b6d9;
@@ -326,6 +330,14 @@ tr.shown td.details-control {
     border-color: #cccccc;
     margin-left: 0;
     margin-right: 0;
+}
+
+.panel.callout.filter-status{
+    font-size: 0.6875rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.6875rem;
+    display: none;
+    border-style: none;
 }
 
 #card-container .card-instance{

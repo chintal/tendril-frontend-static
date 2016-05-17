@@ -303,6 +303,16 @@ $(function(){
       easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
       queueLimit: 3,
       duration: 600
-    }
+    },
+    callbacks: {
+		onMixEnd: function(state){
+		    target = document.getElementById("filter-status");
+		    msg = "Showing <b>" + state.totalShow.toString();
+		    msg += "</b> of " + state.totalTargets.toString() + " ";
+		    msg += target.getAttribute('data-note');
+			target.innerHTML = msg;
+			target.style.display = 'block';
+		}
+	}
   });
 });
