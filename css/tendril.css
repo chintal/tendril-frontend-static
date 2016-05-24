@@ -532,3 +532,147 @@ li.accordion-navigation > a.validation.sectiontitle.alert:focus{
     font-weight: normal;
     line-height: 1.2;
 }
+
+section.indicative-source-info{
+    background: #FFF;
+    margin-bottom: 0.9375rem;
+    color: #333;
+    border: none;
+    box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.2);
+}
+
+div.sinfo{
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    text-align: center;
+}
+
+article.sinfo{
+    border-left: dotted 1px #DDDDDD;
+}
+
+article.sinfo.sinfo-vid{
+    width: 15%;
+    height: 100%;
+}
+
+div.vendorlogo{
+    height: 100%;
+}
+
+div.vendorlogo img{
+    width: auto;
+    padding: 0.5rem;
+    padding-right: 2em;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.sinfo.vname {
+    overflow: hidden;
+    width: 1.8rem;
+    line-height: 1.5;
+	color: #CCC;
+	background-color: #333;
+	font-size: 0.9em;
+	font-weight: bold;
+	height: 100%;
+	white-space: nowrap;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+div.sinfo.vname span{
+    position: relative;
+    top: 50%;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0.3rem;
+    text-align: center;
+    transform: translate(0,50%) rotate(-90deg);
+    transform-origin: 0 0;
+}
+
+div.sinfo.vname span:before {
+     content: "";
+     float: left;
+     margin-top: 100%;
+}
+
+div.sinfo.manufacturer{
+    color: #333333;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+div.sinfo.mpartno, div.sinfo.vpno{
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+}
+
+div.sinfo.vpartdesc{
+    color: #777777;
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1.4;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+div.sinfo.prices{
+    color: #777777;
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1.4;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+div.sinfo.vqtyavail{
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1.4;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+div.sinfo.pkgqty{
+    color: #777777;
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1.4;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+div.price{
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    border-bottom: dotted 1px #DDDDDD;
+}
+
+div.price:last-child{
+    border-bottom: none;
+}
+
+div.sinfo-price-break{
+    text-align: right;
+}
+
+div.sinfo-price-native{
+    text-align: right;
+}
+
+div.sinfo-price-multiple{
+    text-align: right;
+}
