@@ -660,7 +660,7 @@ div.sinfo.last-updated{
     font-size: 0.6rem;
     line-height: 1.4;
     padding: 0.5rem;
-    text-align: center;
+    text-align: left;
 }
 
 div.price{
