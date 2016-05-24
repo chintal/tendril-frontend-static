@@ -655,6 +655,14 @@ div.sinfo.pkgqty{
     text-align: center;
 }
 
+div.sinfo.last-updated{
+    color: #888888;
+    font-size: 0.6rem;
+    line-height: 1.4;
+    padding: 0.5rem;
+    text-align: center;
+}
+
 div.price{
     padding-top: 0.15rem;
     padding-bottom: 0.15rem;
