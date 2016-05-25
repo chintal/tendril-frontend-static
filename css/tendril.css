@@ -610,7 +610,7 @@ div.sinfo.manufacturer{
     font-size: 1rem;
     font-weight: normal;
     padding: 0.2rem;
-    text-align: center;
+    text-align: left;
 }
 
 div.sinfo.mpartno, div.sinfo.vpno{
@@ -683,4 +683,8 @@ div.sinfo-price-native{
 
 div.sinfo-price-multiple{
     text-align: right;
+}
+
+.x-pad-top{
+    padding-top: 2rem;
 }
