@@ -677,6 +677,11 @@ div.sinfo-price-break{
     text-align: right;
 }
 
+div.chosen-price{
+    font-weight: bold;
+    color: #202020;
+}
+
 div.sinfo-price-native{
     text-align: right;
 }
