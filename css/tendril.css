@@ -688,3 +688,43 @@ div.sinfo-price-multiple{
 .x-pad-top{
     padding-top: 2rem;
 }
+
+.checkbox-button {
+    background-color: #a0d3e8;
+    border: 1px solid #61b6d9;
+    overflow: auto;
+    float: left;
+}
+
+.checkbox-button label {
+    float: left;
+}
+
+.checkbox-button label span {
+    text-align: center;
+    display: block;
+    padding: .625rem 1rem .6875rem 1rem;
+    color: #333333;
+    font-size: .6875rem;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+.checkbox-button label input {
+    position: absolute;
+    top: -20px;
+}
+
+.checkbox-button input:hover + span {
+    background-color: #b0e3f8;
+}
+
+.checkbox-button input:checked + span {
+    background-color: #008CBA;
+    border-color: #007095;
+    color: #fff;
+}
+
+.checkbox-button input:checked:hover + span {
+    background-color: #009CCA;
+    color: #fff;
+}
