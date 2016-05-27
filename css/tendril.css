@@ -546,6 +546,10 @@ div.sinfo{
     text-align: center;
 }
 
+div.sinfo .has-tip:not(.chosen-price){
+    font-weight: normal;
+}
+
 article.sinfo{
     border-left: dotted 1px #DDDDDD;
 }
@@ -732,4 +736,14 @@ div.sinfo-price-multiple{
 .checkbox-button input:checked:hover + span {
     background-color: #009CCA;
     color: #fff;
+}
+
+.fine-print li{
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 0.8rem;
+}
+h6.fine-print{
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
