@@ -747,3 +747,34 @@ h6.fine-print{
     font-size: 1rem;
     font-weight: bold;
 }
+
+article.indicative-source-info{
+    background: #FFF;
+    margin-bottom: 0.9375rem;
+    color: #333;
+    border: none;
+    box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    height: 4rem;
+    line-height: 3rem;
+    vertical-align: middle;
+    width: 100%;
+}
+
+span.indicative-costing-label{
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    position: relative;
+}
+
+span.indicative-costing{
+    border-left: dotted 1px #DDDDDD;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    position: relative;
+}
+
