@@ -785,3 +785,12 @@ span.indicative-costing{
     position: relative;
 }
 
+div .cleanchart{
+    background: #FAFAFA;
+    border: 3px #222222;
+}
+
+.cleanchart .nvd3.multiChart .nv-y2.nv-axis line {
+    stroke: none;
+    fill: none;
+}
