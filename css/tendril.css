@@ -285,61 +285,6 @@ tr.shown td.details-control {
     padding: 0.9375em;
 }
 
-.sort.button{
-    font-size: 1.2rem;
-    padding: 0.2rem 0.625rem 0.2rem 0.625rem;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-    font-weight: lighter;
-}
-
-.filter.button{
-    padding: .625rem 1rem .6875rem 1rem;
-}
-
-.sort.button, .filter.button {
-    background-color: #a0d3e8;
-    border-color: #61b6d9;
-    color: #333333;
-}
-
-.sort.button.active, .filter.button.active {
-    background-color: #008CBA;
-    border-color: #007095;
-    color: #FFFFFF;
-}
-
-.filterhead{
-    border-style: solid;
-    border-width: 1px;
-    display: block;
-    font-size: 0.875rem;
-    height: 2.3125rem;
-    line-height: 2.3125rem;
-    overflow: visible;
-    padding-bottom: 0;
-    padding-top: 0;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    z-index: 2;
-    background: #f2f2f2;
-    border-right: none;
-    border-left: none;
-    color: #333333;
-    border-color: #cccccc;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.panel.callout.filter-status{
-    font-size: 0.6875rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.6875rem;
-    display: none;
-    border-style: none;
-}
-
 #card-container .card-instance{
     display: none;
 }
@@ -698,46 +643,6 @@ div.sinfo-price-multiple{
     padding-top: 2rem;
 }
 
-.checkbox-button {
-    background-color: #a0d3e8;
-    border: 1px solid #61b6d9;
-    overflow: auto;
-    float: left;
-}
-
-.checkbox-button label {
-    float: left;
-}
-
-.checkbox-button label span {
-    text-align: center;
-    display: block;
-    padding: .625rem 1rem .6875rem 1rem;
-    color: #333333;
-    font-size: .6875rem;
-    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-}
-
-.checkbox-button label input {
-    position: absolute;
-    top: -20px;
-}
-
-.checkbox-button input:hover + span {
-    background-color: #b0e3f8;
-}
-
-.checkbox-button input:checked + span {
-    background-color: #008CBA;
-    border-color: #007095;
-    color: #fff;
-}
-
-.checkbox-button input:checked:hover + span {
-    background-color: #009CCA;
-    color: #fff;
-}
-
 div.fine-print{
     border: dotted 1px #DDDDDD;
     background: #F7F7F7;
@@ -793,4 +698,122 @@ div .cleanchart{
 .cleanchart .nvd3.multiChart .nv-y2.nv-axis line {
     stroke: none;
     fill: none;
+}
+
+span.avoidwrap {
+    display: inline-block;
+}
+
+ul.filter-group{
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+ul.sort-group{
+    line-height: 1;
+}
+
+.sort.button{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.sort.button, .filter.button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    height: 2.3125rem;
+    line-height: 2.3125rem;
+    overflow: auto;
+    float: left;
+    background-color: #a0d3e8;
+    border-color: #61b6d9;
+    border-bottom: 1px solid;
+    color: #333333;
+    margin: 0;
+}
+
+.sort.button.active, .filter.button.active {
+    background-color: #008CBA;
+    border-color: #007095;
+    color: #FFFFFF;
+}
+
+div.filterblock{
+    width: 100%;
+    overflow: hidden;
+}
+
+ul.sort-group, div.sort-group{
+    display: inline-block;
+    float: left;
+    width: auto;
+}
+
+div.filterhead{
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    line-height: 2.3125rem;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: center;
+    z-index: 2;
+    background: #f2f2f2;
+    color: #333333;
+    border-color: #cccccc;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.panel.callout.filter-status{
+    font-size: 0.6875rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.6875rem;
+    display: none;
+    border-style: none;
+}
+
+.checkbox-button {
+    background-color: #a0d3e8;
+    border: 1px solid #61b6d9;
+    overflow: auto;
+    float: left;
+}
+
+.checkbox-button label {
+    float: left;
+}
+
+.checkbox-button label span {
+    text-align: center;
+    display: block;
+    padding: .625rem 1rem .6875rem 1rem;
+    color: #333333;
+    font-size: .6875rem;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+.checkbox-button label input {
+    position: absolute;
+    top: -20px;
+}
+
+.checkbox-button input:hover + span {
+    background-color: #b0e3f8;
+}
+
+.checkbox-button input:checked + span {
+    background-color: #008CBA;
+    border-color: #007095;
+    color: #fff;
+}
+
+.checkbox-button input:checked:hover + span {
+    background-color: #009CCA;
+    color: #fff;
 }
