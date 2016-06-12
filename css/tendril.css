@@ -259,6 +259,24 @@ tr.shown td.details-control {
     background: url('../images/details_close.png') no-repeat center center;
 }
 
+.childtable{
+    width: 100%;
+}
+
+div.dtchildslider{
+    display: none;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.dataTables_info{
+    font-size: 0.875rem;
+    color: #4d4d4d;
+}
+
+
 .clear-bottom {
     margin-bottom: 0;
 }
@@ -867,6 +885,7 @@ span.product-content-label{
     font-weight: normal;
     padding: 0.3rem 0.3rem;
     padding-left: 2rem;
+    vertical-align: middle;
     position: relative;
 }
 
@@ -877,6 +896,8 @@ span.product-content-qty{
     font-weight: normal;
     padding: 0.5rem 0.5rem;
     text-align: center;
+    vertical-align: middle;
+    float: right;
     position: relative;
 }
 
@@ -979,19 +1000,3 @@ div.motifinfo span.desc{
     border-left: dotted 1px #DDDDDD;
 }
 
-.childtable{
-    width: 100%;
-}
-
-div.dtchildslider{
-    display: none;
-}
-
-.no-padding{
-    padding: 0;
-}
-
-.dataTables_info{
-    font-size: 0.875rem;
-    color: #4d4d4d;
-}
