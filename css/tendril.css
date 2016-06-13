@@ -715,7 +715,7 @@ span.indicative-costing-section-label{
     font-size: 1rem;
     font-weight: normal;
     padding: 0.5rem 0.5rem;
-    text-align: center;
+    padding-left: 1rem;
     position: relative;
 }
 
