@@ -774,7 +774,7 @@ ul.sort-group{
     padding-bottom: 0rem;
     height: 2.3125rem;
     line-height: 2.3125rem;
-    overflow: auto;
+    overflow: hidden;
     float: left;
     background-color: #a0d3e8;
     border-color: #61b6d9;
