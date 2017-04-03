@@ -176,6 +176,10 @@ footer {
     font-size: 1.5rem;
 }
 
+.icon-small{
+    font-size: 1rem;
+}
+
 ul.doclinklist{
     margin-left: 0rem;
     list-style-type: none;
@@ -999,4 +1003,3 @@ div.motifinfo span.desc{
     padding-right: 0;
     border-left: dotted 1px #DDDDDD;
 }
-
