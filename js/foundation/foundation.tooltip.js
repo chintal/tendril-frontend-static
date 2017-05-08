@@ -150,7 +150,7 @@
             _startHide(this, $(this));
           }
         })
-        .on('DOMNodeRemoved DOMAttrModified', '[' + this.attr_name() + ']:not(a)', function (e) {
+        .on('DOMNodeRemoved', '[' + this.attr_name() + ']:not(a)', function (e) {
           _startHide(this, S(this));
         });
     },
