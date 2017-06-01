@@ -1029,3 +1029,8 @@ table.embedtable td.ctxinfohead{
     font-size: 0.725rem;
     text-align: right;
 }
+
+
+.indent-split-opt > div.switch{
+    margin-bottom: 0;
+}
