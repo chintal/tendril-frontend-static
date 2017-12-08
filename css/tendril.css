@@ -655,11 +655,22 @@ div.sinfo-price-multiple{
     padding-top: 2rem;
 }
 
-div.fine-print{
+div.fine-print, div.admonition{
     border: dotted 1px #DDDDDD;
     background: #F7F7F7;
     padding: 1.4rem;
     padding-bottom: 0.4rem;
+}
+
+div.admonition{
+    text-align: center;
+    margin-top: 1rem !important;
+    padding-top: 0.4rem;
+    padding-bottom: 0.6rem;
+}
+.admonition .admonition-text{
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 0.8rem;
 }
 
 .fine-print li{
